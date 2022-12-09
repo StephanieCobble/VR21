@@ -1,0 +1,98 @@
+@media (min-width: 320px) {
+    body {
+      background-color: rgb(132, 20, 20);
+    }
+    .resize {
+        background-color: black;
+        height: 100px;
+        width: 100px;
+    }
+    .add {
+        border: solid 1px white;
+    }
+  }
+
+  @media (min-width: 460px) {
+    body {
+      background-color: rgb(132, 20, 117);
+    }
+    .resize {
+        background-color: black;
+        height: 200px;
+        width: 200px;
+    }
+    .add {
+        border: solid 3px white;
+    }
+  }
+
+  @media (min-width: 481px) {
+    body {
+      background-color: rgb(42, 20, 132);
+    }
+    .resize {
+        background-color: black;
+        height: 300px;
+        width: 300px;
+    }
+    .add {
+        border: solid 5px white;
+    }
+  }
+
+  @media (min-width: 641px) {
+    body {
+      background-color: rgb(37, 71, 140);
+    }
+    .resize {
+        background-color: black;
+        height: 400px;
+        width: 400px;
+    }
+    .add {
+        border: solid 7px white;
+    }
+  }
+
+  @media (min-width: 961px) {
+    body {
+      background-color: rgb(20, 123, 132);
+    }
+    .resize {
+        background-color: black;
+        height: 500px;
+        width: 500px;
+    }
+    .add {
+        border: solid 9px white;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    body {
+      background-color: rgb(70, 132, 20);
+    }
+    .resize {
+        background-color: black;
+        height: 600px;
+        width: 600px;
+    }
+    .add {
+        border: solid 11px white;
+    }
+  }
+
+  @media (min-width: 1281px) {
+    body {
+      background-color: rgb(132, 69, 20);
+    }
+    .resize {
+        background-color: black;
+        height: 700px;
+        width: 700px;
+    }
+    .add {
+        border: solid 13px white;
+    }
+  }
+

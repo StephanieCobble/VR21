@@ -1,0 +1,68 @@
+<!-- - Create two divs with different class names
+- One class should have a property of box-sizing: content-box and the other class with a property called box-sizing: border-box
+- make each div the same width in pixels
+- add the same amount of padding to each
+
+- add an image inside each div container with a width of 100%
+
+Extra CSS practice
+
+- add a pseudo class
+- add a position property and reposition an a div -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Sizing</title>
+    <style>
+      .content-box {
+        box-sizing: content-box;
+        width: 75%;
+        padding: 1em;
+        border: solid 5px black;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        background-color: rgb(36, 36, 130);
+      }
+      .border-box {
+        box-sizing: border-box;
+        width: 75%;
+        padding: 1em;
+        border: solid 5px black;
+        border-radius: 10px;
+      }
+      .content-box:hover {
+        opacity: 0;
+      }
+      img {
+        width: 100%;
+      }
+      .box {
+        height: 500px;
+        width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+
+        <div class="border-box">
+            <img
+            src="https://nationaltoday.com/wp-content/uploads/2022/10/27-Janet-Jackson-640x514.jpg"
+            alt="Janet-Jackson"
+            />
+        </div>
+        <div class="content-box">
+            <img
+            src="https://variety.com/wp-content/uploads/2022/11/snoop.jpg?w=681&h=383&crop=1"
+            alt="Snoop"
+            />
+        </div>
+    </div>
+  </body>
+</html>

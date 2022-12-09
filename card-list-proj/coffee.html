@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interactive Bootstrap Exercise</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+
+      <link rel="stylesheet" href="./coffee.css">
+  </head>
+
+  <!--Add a navbar with a button that says "Add"
+    When add button is clicked a modal will appear with a form to add new data with image, title, & description
+    Add save button to add form 
+    Replace column text with cards and image and description
+    Each card will have an update and delete button
+    When update is clicked a modal is opened with form that has update inputs  and a save button
+    When delete button is clicked, a modal will ask "Are you sure you want to delete? - there will be two buttons that say "Confirm or Cancel""  -->
+
+  <body>
+    <!-- navbar -->
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-light" style="background-color: rgba(111, 123, 185, 0.148);">
+          <div class="container-fluid">
+            <a class="navbar-brand">Coffee</a>
+            <!-- Button trigger modal -->
+            <!-- <button
+              id="add-button"
+              type="button"
+              class="btn btn-primary"
+              >
+              Add
+            </button> -->
+            <button
+            id="add-button"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#addCoffeeModal">
+            Add
+          </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="addCoffeeModal"
+              tabindex="-1"
+              aria-labelledby="addCoffeeModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="addCoffeeModalLabel">Add New</h5>
+
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="add-form">
+                      <div class="mb-3">
+                        <label for="imageUrl" class="form-label">Image</label>
+                        <input
+                          type="url"
+                          class="form-control"
+                          id="imageUrl"
+                          name="url"
+                          placeholder="Image URL" />
+                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                      </div>
+                      <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="title"
+                          placeholder="Title"
+                          name="title" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="description" class="form-label"
+                          >Description</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="description"
+                          placeholder="Description"
+                          name="description" />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal">
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary" id="save-btn">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- cards -->
+      <main>
+        <div class="row">
+          </div>
+
+      <!-- MODAL AREA -->
+      
+      <!-- update modal  -->
+      <div
+      class="modal fade"
+      id="updateModal"
+      tabindex="-1"
+      aria-labelledby="updateModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updateModalLabel">Update</h5>
+            <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+
+                  <div class="mb-3">
+                    <label for="updateImg" class="form-label">Image</label>
+                    <input
+                      type="url"
+                      class="form-control"
+                      id="updateImg"
+                      aria-describedby="emailHelp"
+                      placeholder="Image URL" />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="updateInputTitle" class="form-label"
+                      >Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="updateInputTitle"
+                      placeholder="Title" />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="updateInputDesc" class="form-label"
+                      >Description</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="updateInputDesc"
+                      placeholder="Description" />
+                  </div>
+
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary" id="update-btn">Update!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- delete -->
+        <div
+          class="modal fade"
+          id="deleteModal"
+          tabindex="-1"
+          aria-labelledby="deleteModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure you want to delete?</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+
+    <script src="./coffee.js">
+    </script>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

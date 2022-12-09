@@ -1,0 +1,15 @@
+{
+  "name": "intermediate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator-test.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        div {
+            margin: 1em;
+            padding: 0.5em;
+        }
+        #food {
+            background-color: lightgray;
+            font-style: italic;
+        }
+        /* #movies {
+            background-color: black;
+            color: yellow;
+        }
+        #tv {
+            background-color: lightblue;
+        }
+        .tv-list{
+            background-color: maroon;
+            color: lightblue;
+        } */
+        div:nth-child(2){
+            background-color: black;
+            color: yellow;
+        }
+        div:nth-child(3){
+            background-color: lightblue
+        }
+        div > div {
+            background-color: maroon;
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="food">
+        <ul>
+            <p>Favorite Foods</p>
+            <li>
+                Chicken Tikka Masala
+            </li>
+            <li>
+                Carne Asada
+            </li>
+            <li>
+                Sushi
+            </li>
+        </ul>
+    </div>
+    <div id="movies">
+        <ul>
+            <p>Favorite Movies</p>
+            <li>
+                The Hobbit
+            </li>
+            <li>
+                Deadpool
+            </li>
+            <li>
+                Holes
+            </li>
+        </ul>
+    </div>
+    <div id="tv">
+        <div class="tv-list">
+            <ul>
+                <p>TV Shows</p>
+                <li>
+                    Star Trek: Deep Space Nine
+                </li>
+                <li>
+                    Gordon Ramsay's Uncharted
+                </li>
+                <li>
+                    The Devil's Hour
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

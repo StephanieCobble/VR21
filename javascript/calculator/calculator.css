@@ -1,0 +1,86 @@
+body {
+    background-color: rgba(161, 163, 178, 0.533);
+}
+
+.calc {
+    margin: 0 auto;
+    margin-top: 5em;
+    height: 480px;
+    width: 259px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.calc-display {
+    grid-column: 1 / span 4;
+    font-size: 30px;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.calc-display input {
+    grid-column: 1 / span 4;
+    font-size: 30px;
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    background-color: rgb(49, 49, 52);
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+.buttons-pad {
+    align-items: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+}
+
+.key-g {
+    background-color: rgb(165, 165, 165);
+}
+
+.key-g:active {
+    background-color: rgba(157, 156, 156, 0.869);
+}
+
+.key-op {
+    background-color: rgb(241, 163, 59);
+    color: rgb(255, 255, 255);
+}
+
+.key-op:active{
+    background-color: rgba(248, 197, 129, 0.866);
+    color: rgb(255, 255, 255);
+}
+
+.key-num {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+.key-num:active{
+    background-color: rgba(142, 142, 142, 0.896);
+    color: rgb(255, 255, 255);
+}
+
+#zero {
+    /* padding-left: 3em; */
+    grid-column: span 2;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    margin: 0.3rem;
+    padding: 5px;
+    font-size: 30px;
+    /* transition-duration: 0.4s; */
+}
+

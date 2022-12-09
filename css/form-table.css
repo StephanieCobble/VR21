@@ -1,0 +1,66 @@
+html {
+    background-color: black;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: fantasy;
+    color: rgb(151, 189, 211);
+}
+
+header {
+    padding: 10px;
+    padding-left: 3vw;
+
+}
+
+a {
+    color: rgb(141, 172, 190);
+    padding-right: 5vw;
+}
+
+main {
+    padding: 15px;
+    background: linear-gradient(45deg, rgba(108, 12, 76, 0.602), rgba(18, 18, 132, 0.602), rgba(0, 0, 0, 0.602));
+}
+
+.edge {
+    border-radius: 10px;
+    background-color: rgb(225, 212, 238);
+}
+
+.spacing {
+    display: grid;
+    max-width: 50vw;
+}
+
+h2 {
+    font-family: copperplate;
+    font-size: 25px;
+    color: rgb(106, 113, 166);
+}
+
+table {
+    border: 2px ridge gray;
+    border-radius: 10px;
+    color: rgb(48, 9, 48);
+    background-color: rgb(198, 114, 174);
+    
+}
+
+thead th {
+    border-bottom: 2px ridge gray;
+}
+
+tr {
+    border: 2px ridge gray;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c78bb8;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #cba4cb;
+  }
+  
+  /* #article {
+    font-family: 'Times New Roman', Times, serif;
+  } */
