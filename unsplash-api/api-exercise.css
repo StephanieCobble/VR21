@@ -1,0 +1,16 @@
+body {
+    background-color: rgba(111, 123, 185, 0.138);
+}
+
+.row {
+    margin: auto;
+    margin-top: 1vh;
+}
+.col-md-3 {
+/* border: solid 1px black; */
+margin-bottom: 1vh;
+}
+img {
+height: 23vh;
+width: 22vw;
+}

@@ -20,36 +20,31 @@ function generateCard(e) {
   let contentCard = `
   <div class="col-md-3">
   <div class="card">
-  <img
-  src='${imageUrl.value}'
-  class="card-img-top"
-  alt="Hot Coffee" />
-  <div class="card-body">
-  <h5 class="card-title">${title.value}</h5>
-  <p class="card-text">
-     ${description.value}
-  </p>
-  <div class="btn-container">
-  <button
-  type="button"
-  id='${num}'
-  class="btn btn-primary"
-  data-bs-toggle="modal"
-  data-bs-target="#updateModal">
-  Update
-  </button>
-  &nbsp;
-  <button
-  type="button"
-  class="btn btn-primary"
+    <img src="${imageUrl.value}" class="card-img-top" alt="Hot Coffee" />
+    <div class="card-body">
+      <h5 class="card-title">${title.value}</h5>
+      <p class="card-text">${description.value}</p>
+      <div class="btn-container">
+        <button
+          type="button"
+          id="${num}"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#updateModal">
+          Update
+        </button>
+        &nbsp;
+        <button
+          type="button"
+          class="btn btn-primary"
           data-bs-toggle="modal"
           data-bs-target="#deleteModal">
           Delete
-          </button>
-          </div>
-          </div>
-          </div>
-          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
           `;
 
   let makeDiv = document.createElement("div");
