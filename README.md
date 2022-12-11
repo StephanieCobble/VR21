@@ -1,10 +1,10 @@
-[Card List Proj](https://stephaniecobble.github.io/VR21/card-list-proj/coffee.html)
-[HTML-Portfolio](https://stephaniecobble.github.io/Portfolio/)
-[Bootstrap Portfolio](https://stephaniecobble.github.io/Portfolio-Bootstrap/)
-[Card List Bootstrap](https://stephaniecobble.github.io/VR21/html-css/coffee-bootstrap.html)
-[Meme Generator](https://stephaniecobble.github.io/VR21/meme/meme.html)
-[Memory Card Game](https://stephaniecobble.github.io/VR21/memory-game2/game.html)
-[Unsplash Card List Proj API](https://stephaniecobble.github.io/VR21/unsplash-api/api-exercise.html) 
+[Card List Proj](https://stephaniecobble.github.io/VR21/card-list-proj/coffee.html) | 
+[HTML-Portfolio](https://stephaniecobble.github.io/Portfolio/) | 
+[Bootstrap Portfolio](https://stephaniecobble.github.io/Portfolio-Bootstrap/) | 
+[Card List Bootstrap](https://stephaniecobble.github.io/VR21/html-css/coffee-bootstrap.html) | 
+[Meme Generator](https://stephaniecobble.github.io/VR21/meme/meme.html) | 
+[Memory Card Game](https://stephaniecobble.github.io/VR21/memory-game2/game.html) | 
+[Unsplash Card List Proj API](https://stephaniecobble.github.io/VR21/unsplash-api/api-exercise.html)  
 
 [Eloquent Javascript](https://eloquentjavascript.net/)
 # Chapter 1 Review
