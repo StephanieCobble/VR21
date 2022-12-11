@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Interactive Bootstrap Exercise</title>
+    <title>Card List Project - Coffee</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -109,7 +109,7 @@
                       data-bs-dismiss="modal">
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary" id="save-btn">Save</button>
+                    <button type="button" class="btn btn-primary" id="save-btn" data-bs-dismiss="modal">Save</button>
                   </div>
                 </div>
               </div>
@@ -120,8 +120,10 @@
 
       <!-- cards -->
       <main>
-        <div class="row">
+        <div class="outer-container">
+          <div class="row">
           </div>
+        </div>
 
       <!-- MODAL AREA -->
       
@@ -143,7 +145,7 @@
                   aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <form>
+                <form id="update-form">
 
                   <div class="mb-3">
                     <label for="updateImg" class="form-label">Image</label>
@@ -185,7 +187,7 @@
                   data-bs-dismiss="modal">
                   Close
                 </button>
-                <button type="button" class="btn btn-primary" id="update-btn">Update!</button>
+                <button type="button" class="btn btn-primary" id="update-btn" data-bs-dismiss="modal">Update</button>
               </div>
             </div>
           </div>
@@ -218,7 +220,7 @@
                   data-bs-dismiss="modal">
                   Close
                 </button>
-                <button type="button" class="btn btn-primary">Delete</button>
+                <button type="button" class="btn btn-primary" id="deleteBtn" data-bs-dismiss="modal">Delete</button>
               </div>
             </div>
           </div>
