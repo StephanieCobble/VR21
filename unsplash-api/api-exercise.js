@@ -1,10 +1,7 @@
 // get api key
 //capture search term
-
 //make a req to unsplash api
-
 // capture api data
-
 // loop over the data
 // append to the dom
 const client_id = "9WZGfUCuR_LYgjZ-8CQJjk2AE0akdVou0MfHW1_jrn4"; // Create an account unsplash tp hey client ID (access key);
@@ -16,7 +13,6 @@ const search = document.querySelector("#search");
 let userSearch;
 const searchButton = document.querySelector('.search-btn');
 searchButton.addEventListener('click', getResults);
-
 
 function getResults(e) {
     e.preventDefault();
@@ -60,16 +56,12 @@ function getResults(e) {
 //   .then((response) => response.json())
 //   .then((data) => {
 //     const container = document.querySelector(".container");
-
 //     for (let i = 0; i < data.results.length - 1; i++) {
 //       const img = document.createElement("img");
-
 //       img.setAttribute("src", data.results[i].urls.thumb);
-
 //       container.append(img);
 //     }
 //   });
-
 
 fetch(urlStr)
   .then((res) => res.json())
