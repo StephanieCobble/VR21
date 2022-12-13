@@ -1,0 +1,9 @@
+.list-container{
+    margin: auto;
+}
+
+ul {
+    border: 1px solid black;
+    list-style: none;
+    display: flex;
+}
