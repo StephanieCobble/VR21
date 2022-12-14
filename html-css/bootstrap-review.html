@@ -125,33 +125,54 @@
     </div>
 
     <script>
-        const imageUrl = document.querySelector('#imageUrl');
-        const title = document.querySelector('#title');
-        const description= document.querySelector('#description');
-        const saveBtn = document.querySelector('#save-btn');
-        const row = document.querySelector('.row');
-        const addForm = document.querySelector('#add-form');
         // const createModal = new bootstrap.Modal(document.querySelector('#createModal'))
 
-        saveBtn.addEventListener('click', (e) => {
-        let contentCard = `
-        <div class="col-md-3">
-          <div class="card border-info mb-4 p-2">
-            <img
-              class="card-img-top"
-              src=${imageUrl.value}
-              alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">${title.value}</h5>
-              <p class="card-text">
-                ${description.value}
-              </p>
-              <a href="#" class="btn btn-info">Go somewhere</a>
+        const buildCard = ({imageUrl, title, description}) => {
+            let contentCard = `
+            <div class="col-md-3">
+            <div class="card border-info mb-4 p-2">
+                <img
+                class="card-img-top"
+                src=${imageUrl}
+                alt="Card image cap" />
+                <div class="card-body">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-text">
+                    ${description}
+                </p>
+                <a href="#" class="btn btn-info">Go somewhere</a>
+                </div>
             </div>
-          </div>
-        </div>
-        `
-        row.insertAdjacentHTML("beforeend", contentCard);
+            </div>
+            `;
+            return contentCard;
+        };
+
+        const appendToRow = (arrOfItems) => {
+            const row = document.querySelector('.row');
+            row.innerHTML = '';
+
+            arrOfItems.forEach((item) => {
+                const newCard = buildCard(item);
+                row.insertAdjacentHTML("beforeend", newCard);
+            });
+        };
+
+        const saveBtn = document.querySelector('#save-btn');
+        saveBtn.addEventListener('click', (e) => {
+            const imageUrl = document.querySelector('#imageUrl').value;
+            const title = document.querySelector('#title').value;
+            const description= document.querySelector('#description').value;
+            
+            const addForm = document.querySelector('#add-form');
+
+            const currentItems = JSON.parse(localStorage.getItem('items')) || [];
+            const newItem = {title, imageUrl, description };
+            const newItems = [...currentItems, newItem];
+
+            localStorage.setItem('items', JSON.stringify(newItems));
+
+            appendToRow(newItems);
         // createModal.hide();
         addForm.reset();
     });
